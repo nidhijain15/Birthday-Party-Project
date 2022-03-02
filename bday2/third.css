@@ -1,0 +1,307 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+
+.head {
+    font-family:  'Architects Daughter', cursive;    
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    top: 0px;
+    background-color: black;
+}
+
+
+#navbar::before{
+    content: "";
+    background:url('bg4.jpg') no-repeat center center/cover ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#navbar ul{
+    display: flex;
+    font-family:  cursive;
+}
+
+h1 {
+    position: absolute;
+    top: 8px;
+    right: 101px;
+    color: #f7edec;
+    font-size: 2.2em;
+    
+}
+
+#logo{
+    margin-top: 5px;
+}
+
+.boxesContainer1 .cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.4s ease 0s;
+    width: 20%;
+    margin: 21px -175px 0px 355px;
+  }
+  
+  .cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.4s ease 0s;
+    width: 20%;
+    margin-left: 425px;
+      
+  }
+  
+  .cardBox:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    background: #1f1e53;
+    cursor: pointer;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease 0s;
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 20px 0px 20px 0px;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #105252 !important;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+
+  .card p {
+    margin-bottom: 2.6em;
+    margin-top: 39px;
+    color: #222;
+  }
+  
+  .card .front,
+  .card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em 0.7em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+      
+  }
+  
+  .card .front strong {
+    background: rgb(35, 2, 223);
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+    }
+    
+  .card .back {
+    transform: rotateY( 180deg);
+  }
+  
+  .card .back a {
+    padding: 0.3em 0.5em;
+    background: rgb(51, 51, 51);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 23px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+  }
+  
+  .card .back a:hover {
+    background: #fff;
+    color: rgb(7, 17, 75);
+    text-shadow: 0 0 1px rgb(59, 74, 83);
+  }
+  
+  .cardBox:nth-child(1) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(2) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(3) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+  
+  .cardBox:nth-child(4) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(5) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(6) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(7) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(8) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(9) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(10) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(11) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(12) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(13) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(14) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(15) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(16) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(17) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(18) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+  
+  .cardBox:nth-child(19) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+
+  .cardBox:nth-child(20) .card .back {
+    background-image: linear-gradient(#b0ccf1, rgb(17, 155, 136));
+  }
+  
+  .cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+  }
+  
+  .cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+  }
+  
+  .cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+  }
+  
+  @-webkit-keyframes giro {
+    from {
+      transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(0deg);
+      }
+  }
+  
+  @keyframes giro {
+    from {
+      transform: rotateY(180deg);
+      }
+    to {
+      transform: rotateY(0deg);
+      }
+    }
+  
+  @media screen and (max-width: 767px) {
+    .cardBox {
+      margin-left: 2.8%;
+      margin-top: 3%;
+      width: 46%;
+      }
+  
+    .card {
+      height: 285px;
+      }
+  
+    .cardBox:last-child {
+      margin-bottom: 3%;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .cardBox {
+      width: 94.5%;
+      }
+  
+    .card {
+      height: 260px;
+      }
+  }
+  
+  .homeimg{
+    margin-top: -18px;
+    margin-left: -16px;
+  }
+
+  #two{
+    margin-left: 50px;
+  }
+
+  #three{
+    margin-top: 56px;
+    /* margin-right: -9px; */
+    margin-left: 165px;
+  }
